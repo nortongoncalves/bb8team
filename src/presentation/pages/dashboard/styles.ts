@@ -31,7 +31,7 @@ export const Container = styled.div`
   flex-direction: column;
 
   @media only screen and (min-width: 0px) and (max-width: 576px) {
-    max-width: 100%;
+    max-width: 90%;
   }
 
   @media only screen and (min-width: 576px) and (max-width: 768px) {

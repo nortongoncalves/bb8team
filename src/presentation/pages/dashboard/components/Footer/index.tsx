@@ -1,4 +1,6 @@
 import React from 'react';
+import { FaPhone } from '@react-icons/all-files/fa/FaPhone';
+import { FaBuilding } from '@react-icons/all-files/fa/FaBuilding';
 import {
   Main,
   Background,
@@ -7,7 +9,7 @@ import {
   FirstArticle,
   FourthArticle,
   SecondArticle,
-  ThirdArticle,
+  FifthArticle,
 } from './styles';
 import { Container } from '../../styles';
 
@@ -36,22 +38,24 @@ export function Footer(): JSX.Element {
                 </ul>
               </nav>
             </SecondArticle>
-            <ThirdArticle>
-              <img src="" alt="" />
-            </ThirdArticle>
             <FourthArticle>
               <h3>Get in touch</h3>
+            </FourthArticle>
+            <FifthArticle>
               <ul>
-                <li>
-                  <img src="" alt="" />
+                <li className="phone-info">
+                  <FaPhone className="FaPhone" />
                   <p>209-296-5917</p>
                 </li>
-                <li>
-                  <img src="" alt="" />
-                  <p>2184 Freedom Lane, Pine Grove United States</p>
+                <li className="build-info">
+                  <FaBuilding className="FaBuilding" />
+                  <p>
+                    2184 Freedom Lane,
+                    <br /> Pine Grove United States
+                  </p>
                 </li>
               </ul>
-            </FourthArticle>
+            </FifthArticle>
           </FirstSection>
           <SecondSection>
             <p>© 2021 BB8 Team. All rights reserved.</p>
