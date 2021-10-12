@@ -17,7 +17,11 @@ export const Background = styled.footer`
   min-height: 30rem;
 
   @media only screen and (min-width: 992px) {
-    min-height: 36.1rem;
+    min-height: 45rem;
+  }
+
+  @media only screen and (min-width: 1200px) {
+    min-height: 38rem;
   }
 `;
 

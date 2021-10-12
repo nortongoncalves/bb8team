@@ -3,6 +3,12 @@ import { createGlobalStyle } from 'styled-components';
 export interface colorsParams {
   background: string;
   title: string;
+  menuBackground: string;
+  menuTitleColor: string;
+  menuTextColor: string;
+  menuTouchOpacity: string;
+  menuTouchOpacityTextColor: string;
+  menuButtonBarsColor: string;
   footerBackground: string;
   footerText: string;
 }

@@ -7,22 +7,6 @@ export const Main = styled.main`
   flex: 1;
 `;
 
-export const Header = styled.header`
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  flex: 1;
-  box-shadow: 0 2px 20px 0 rgb(0 0 0 / 5%);
-
-  width: 100%;
-  height: 100%;
-  min-height: 6.1rem;
-
-  @media only screen and (min-width: 768px) {
-    min-height: 9.8rem;
-  }
-`;
-
 export const Container = styled.div`
   width: 100%;
   height: 100%;
