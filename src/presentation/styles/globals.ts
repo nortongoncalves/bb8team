@@ -9,6 +9,12 @@ export interface colorsParams {
   menuTouchOpacity: string;
   menuTouchOpacityTextColor: string;
   menuButtonBarsColor: string;
+  apresentationContentBackground: string;
+  apresentationContentTitle: string;
+  apresentationContentDescribe: string;
+  apresentationContentButtonBackground: string;
+  apresentationContentButtonColor: string;
+  apresentationContentIconColor: string;
   footerBackground: string;
   footerText: string;
 }
