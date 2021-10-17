@@ -5,6 +5,8 @@ export const Main = styled.main`
   align-items: center;
   flex-direction: column;
   flex: 1;
+  position: relative;
+  z-index: 0;
 `;
 
 export const Container = styled.div`
