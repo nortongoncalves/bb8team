@@ -48,6 +48,10 @@ export default createGlobalStyle`
     cursor: pointer;
   }
 
+  body, button, input, textarea {
+    font-size: clamp(14px, 1.6rem, 2vw);
+  }
+
   code {
     font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
       monospace;
