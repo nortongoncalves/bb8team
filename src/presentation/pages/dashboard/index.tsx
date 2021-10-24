@@ -3,6 +3,7 @@ import { Main } from './styles';
 import { Footer } from './components/Footer';
 import { Header } from './components/Header';
 import { ApresentationContent } from './components/ApresentationContent';
+import { Companies } from './components/Companies';
 
 function Dashboard(): JSX.Element {
   return (
@@ -10,6 +11,7 @@ function Dashboard(): JSX.Element {
       <Header />
       <Main>
         <ApresentationContent />
+        <Companies />
       </Main>
       <Footer />
     </>

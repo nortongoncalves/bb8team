@@ -1,7 +1,7 @@
 import React from 'react';
 import { Button } from './styles';
 
-interface TouchOpacityParams {
+export interface TouchOpacityParams {
   backgroundColor?: string;
   color?: string;
   width?: number;
@@ -9,13 +9,13 @@ interface TouchOpacityParams {
   children: JSX.Element | JSX.Element[] | string;
 }
 
-export const TouchOpacity: React.FC<TouchOpacityParams> = ({
+export function TouchOpacity({
   children,
   width = 13.5,
   height = 3.7,
   backgroundColor = '#F97D26',
   color = '#FFFFFF',
-}: TouchOpacityParams): JSX.Element => {
+}: TouchOpacityParams): JSX.Element {
   return (
     <Button
       width={width}
@@ -27,4 +27,4 @@ export const TouchOpacity: React.FC<TouchOpacityParams> = ({
       {children}
     </Button>
   );
-};
+}

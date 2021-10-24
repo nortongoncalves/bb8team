@@ -10,6 +10,7 @@ import {
   Button,
   FirstArticle,
   Image,
+  SecondArticle,
 } from './styles';
 
 export function ApresentationContent(): JSX.Element {
@@ -29,9 +30,9 @@ export function ApresentationContent(): JSX.Element {
               </Description>
               <Button>Hire us</Button>
             </FirstArticle>
-            <article>
+            <SecondArticle>
               <Image src={ilustrationSvg} alt="ilustration" />
-            </article>
+            </SecondArticle>
           </header>
           <footer>
             <FaChevronDown />

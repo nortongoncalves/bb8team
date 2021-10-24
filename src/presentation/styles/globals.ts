@@ -1,4 +1,4 @@
-import { createGlobalStyle } from 'styled-components';
+import { createGlobalStyle, ThemeProps } from 'styled-components';
 
 export interface colorsParams {
   background: string;
@@ -15,6 +15,10 @@ export interface colorsParams {
   apresentationContentButtonBackground: string;
   apresentationContentButtonColor: string;
   apresentationContentIconColor: string;
+  companiesBackgroundColor: string;
+  companiesTitleColor: string;
+  companiesTitleColorXs: string;
+  companiesDescriptionColor: string;
   footerBackground: string;
   footerText: string;
 }
@@ -30,6 +34,8 @@ export default createGlobalStyle`
     font-size: 1.6rem;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    background-color: ${(props: ThemeProps<colorsParams>) =>
+      props.theme.background};
   }
 
   * {
