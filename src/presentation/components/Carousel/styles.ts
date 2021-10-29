@@ -4,13 +4,11 @@ export const Container = styled.div`
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   gap: 1.5rem;
   overflow: hidden;
   overflow-x: scroll;
-  margin-bottom: 4rem;
 
-  /*
   ::-webkit-scrollbar-track {
     display: none;
   }
@@ -20,5 +18,4 @@ export const Container = styled.div`
   ::-webkit-scrollbar-thumb {
     display: none;
   }
-  */
 `;
