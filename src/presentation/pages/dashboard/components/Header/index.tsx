@@ -2,7 +2,7 @@ import React from 'react';
 import { Container } from '../../styles';
 import { Background, Content, TitleGroup } from './styles';
 import { Nav } from './components/Nav';
-import logoHomeSvg from '../../../../../assets/logo.home.svg';
+import logoHomeSvg from '../../../../../assets/logo-home.svg';
 
 export function Header(): JSX.Element {
   return (

@@ -19,6 +19,15 @@ export interface colorsParams {
   companiesTitleColor: string;
   companiesTitleColorXs: string;
   companiesDescriptionColor: string;
+  agenciesTitleColor: string;
+  agenciesCardTitleColor: string[];
+  agenciesCardDescriptionColor: string;
+  agenciesCardBorderColor: string[];
+  customersTitleColor: string;
+  customersCardBackground: string;
+  customersCardDescriptionColor: string;
+  customersCardBorderColor: string;
+  customersCardSpanColor: string;
   footerBackground: string;
   footerText: string;
 }
