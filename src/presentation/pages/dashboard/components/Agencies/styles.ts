@@ -25,6 +25,14 @@ export const Content = styled.div`
     text-align: center;
     margin-bottom: 6rem;
   }
+
+  @media only screen and (max-width: 425px) {
+    & > h1 {
+      font-size: 4rem;
+      text-align: right;
+      margin-bottom: 6rem;
+    }
+  }
 `;
 
 export const CardGroup = styled.div`
@@ -34,6 +42,12 @@ export const CardGroup = styled.div`
   justify-content: space-between;
   align-items: flex-start;
   overflow: hidden;
+
+  @media only screen and (max-width: 768px) {
+    flex-direction: column;
+    align-items: center;
+    gap: 5rem;
+  }
 `;
 
 export const Card = styled.div<CardParams>`
@@ -72,5 +86,22 @@ export const Card = styled.div<CardParams>`
     font-size: 2rem;
     color: ${(props: ThemeProps<colorsParams>) =>
       props.theme.agenciesCardDescriptionColor};
+  }
+
+  @media only screen and (max-width: 768px) {
+    width: 80%;
+  }
+
+  @media only screen and (max-width: 425px) {
+    width: 100%;
+    min-height: 35rem;
+
+    h1 {
+      font-size: 3rem;
+    }
+
+    p {
+      font-size: 1.8rem;
+    }
   }
 `;

@@ -16,26 +16,24 @@ export const Background = styled.div`
 export const Content = styled.div`
   display: flex;
   flex: 1;
-  min-height: 40rem;
-  justify-content: space-around;
+  min-height: 45rem;
+  justify-content: space-evenly;
   flex-direction: column;
 
   @media only screen and (max-width: 425px) {
-    min-height: 30rem;
+    min-height: 35rem;
   }
 `;
 
 export const Title = styled.h1`
   font-size: 6rem;
   text-align: center;
-  margin: 4rem 0 6rem;
-  font-weight: 500;
+  font-weight: 600;
   color: ${(props: ThemeProps<colorsParams>) =>
     props.theme.companiesTitleColor};
 
   @media only screen and (max-width: 425px) {
     font-size: 3rem;
-    margin: 3rem 0 1.5rem;
     color: ${(props: ThemeProps<colorsParams>) =>
       props.theme.companiesTitleColorXs};
   }
@@ -49,7 +47,7 @@ export const Description = styled.h2`
     props.theme.companiesDescriptionColor};
 
   @media only screen and (max-width: 425px) {
-    font-size: 1rem;
+    font-size: 1.5rem;
   }
 `;
 
