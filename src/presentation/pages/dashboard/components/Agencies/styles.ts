@@ -26,7 +26,7 @@ export const Content = styled.div`
     margin-bottom: 6rem;
   }
 
-  @media only screen and (max-width: 425px) {
+  @media only screen and (max-width: 426px) {
     & > h1 {
       font-size: 4rem;
       text-align: right;
@@ -88,11 +88,24 @@ export const Card = styled.div<CardParams>`
       props.theme.agenciesCardDescriptionColor};
   }
 
+  @media only screen and (max-width: 1024px) {
+    h1 {
+      font-weight: 400;
+      font-size: 3rem;
+      color: ${(props: ThemeProps<colorsParams> & CardParams) =>
+        props.theme.agenciesCardTitleColor[props.colorIndex]};
+    }
+
+    img {
+      width: 50px;
+    }
+  }
+
   @media only screen and (max-width: 768px) {
     width: 80%;
   }
 
-  @media only screen and (max-width: 425px) {
+  @media only screen and (max-width: 426px) {
     width: 100%;
     min-height: 35rem;
 

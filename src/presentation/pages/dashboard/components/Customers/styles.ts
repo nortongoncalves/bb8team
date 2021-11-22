@@ -20,6 +20,10 @@ export const Content = styled.div`
       props.theme.agenciesTitleColor};
     text-align: left;
     margin-bottom: 14rem;
+    @media only screen and (max-width: 426px) {
+      font-size: 3.5rem;
+      margin-bottom: 10rem;
+    }
   }
 `;
 
@@ -29,6 +33,12 @@ export const CardGroup = styled.div`
   flex: 1;
   justify-content: space-between;
   align-items: flex-start;
+
+  @media only screen and (max-width: 426px) {
+    flex-direction: column;
+    align-items: center;
+    gap: 6rem;
+  }
 `;
 
 export const Card = styled.div`
@@ -72,5 +82,9 @@ export const Card = styled.div`
     text-align: right;
     color: ${(props: ThemeProps<colorsParams>) =>
       props.theme.customersCardSpanColor};
+  }
+
+  @media only screen and (max-width: 426px) {
+    width: 100%;
   }
 `;
