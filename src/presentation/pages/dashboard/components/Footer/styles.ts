@@ -85,12 +85,12 @@ export const FirstArticle = styled.article`
   position: relative;
   z-index: 6;
 
-  h1 {
+  h2 {
     font-weight: bold;
     font-size: 5rem;
   }
 
-  h2 {
+  h3 {
     font-weight: normal;
     font-size: 4rem;
   }
@@ -98,12 +98,12 @@ export const FirstArticle = styled.article`
   @media only screen and (max-width: 992px) {
     grid-area: 1 / 1 / 2 / 3;
 
-    h1 {
+    h2 {
       font-size: 3rem;
       text-align: center;
     }
 
-    h2 {
+    h3 {
       font-size: 2rem;
       text-align: center;
     }
@@ -156,7 +156,7 @@ export const FourthArticle = styled.article`
   position: relative;
   z-index: 6;
 
-  h3 {
+  h4 {
     font-size: 3.5rem;
     font-weight: bold;
   }

@@ -25,7 +25,7 @@ export const Content = styled.div`
   }
 `;
 
-export const Title = styled.h1`
+export const Title = styled.h3`
   font-size: 6rem;
   text-align: center;
   font-weight: 600;
@@ -39,7 +39,7 @@ export const Title = styled.h1`
   }
 `;
 
-export const Description = styled.h2`
+export const Description = styled.h4`
   font-size: 2rem;
   text-align: center;
   font-weight: 400;

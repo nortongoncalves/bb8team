@@ -7,9 +7,9 @@ export function Customers(): JSX.Element {
     <Background>
       <Container>
         <Content>
-          <h1>
+          <h5>
             What our customers are <br /> saying...
-          </h1>
+          </h5>
           <CardGroup>
             <Card>
               <p>

@@ -13,7 +13,7 @@ export const Background = styled.div`
 `;
 
 export const Content = styled.div`
-  & > h1 {
+  & > h5 {
     font-size: 6rem;
     font-weight: 500;
     color: ${(props: ThemeProps<colorsParams>) =>

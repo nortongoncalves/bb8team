@@ -20,8 +20,8 @@ export function Footer(): JSX.Element {
         <Main>
           <FirstSection>
             <FirstArticle>
-              <h1>BB8 Team</h1>
-              <h2>Quality for cheap</h2>
+              <h2>BB8 Team</h2>
+              <h3>Quality for cheap</h3>
             </FirstArticle>
             <SecondArticle>
               <nav>
@@ -39,7 +39,7 @@ export function Footer(): JSX.Element {
               </nav>
             </SecondArticle>
             <FourthArticle>
-              <h3>Get in touch</h3>
+              <h4>Get in touch</h4>
             </FourthArticle>
             <FifthArticle>
               <ul>
