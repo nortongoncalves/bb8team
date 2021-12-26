@@ -34,7 +34,7 @@ export const CardGroup = styled.div`
   justify-content: space-between;
   align-items: flex-start;
 
-  @media only screen and (max-width: 426px) {
+  @media only screen and (max-width: 850px) {
     flex-direction: column;
     align-items: center;
     gap: 6rem;
@@ -46,7 +46,7 @@ export const Card = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  width: 31%;
+  max-width: 31%;
   min-height: 28rem;
   border: 0.1rem solid
     ${(props: ThemeProps<colorsParams>) => props.theme.customersCardBorderColor};
@@ -84,7 +84,7 @@ export const Card = styled.div`
       props.theme.customersCardSpanColor};
   }
 
-  @media only screen and (max-width: 426px) {
-    width: 100%;
+  @media only screen and (max-width: 850px) {
+    max-width: 100%;
   }
 `;

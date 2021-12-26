@@ -22,15 +22,15 @@ export const Content = styled.section`
   flex-direction: column;
   justify-content: space-around;
   min-height: calc(100vh - 8rem);
+  max-height: calc(100vh + 1rem);
+
+  @media only screen and (max-height: 500px) {
+    height: 105vh;
+  }
 
   header {
     display: flex;
     flex-direction: row;
-    gap: 30rem;
-
-    @media only screen and (max-width: 1024px) {
-      gap: 10rem;
-    }
   }
 
   footer {
@@ -44,13 +44,27 @@ export const Content = styled.section`
       color: ${(props: ThemeProps<colorsParams>) =>
         props.theme.apresentationContentIconColor};
     }
+
+    @media only screen and (max-width: 425px) {
+      svg {
+        font-size: 2.5rem;
+      }
+    }
   }
 `;
 
 export const FirstArticle = styled.article`
   display: flex;
   flex-direction: column;
-  gap: 5rem;
+  gap: 10rem;
+
+  @media only screen and (max-width: 1024px) {
+    gap: 5rem;
+  }
+
+  @media only screen and (max-height: 500px) {
+    gap: 2rem;
+  }
 `;
 
 export const SecondArticle = styled.article`
@@ -67,7 +81,7 @@ export const Title = styled.h1`
     props.theme.apresentationContentTitle};
 
   @media only screen and (max-width: 768px) {
-    font-size: 5.5rem;
+    font-size: 5rem;
   }
 `;
 
@@ -78,7 +92,7 @@ export const Description = styled.h2`
     props.theme.apresentationContentDescribe};
 
   @media only screen and (max-width: 768px) {
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
 `;
 
@@ -89,7 +103,7 @@ export const Button = styled.button`
     props.theme.apresentationContentButtonColor};
   background-color: ${(props: ThemeProps<colorsParams>) =>
     props.theme.apresentationContentButtonBackground};
-
+  align-self: center;
   outline: none;
   border: none;
   border-radius: 0.5rem;
@@ -103,11 +117,13 @@ export const Button = styled.button`
 
   @media only screen and (max-width: 768px) {
     width: 65%;
+    font-size: 3rem;
   }
 
   @media only screen and (max-width: 425px) {
-    width: 75%;
+    width: 70%;
     margin: 0 auto;
+    font-size: 2.5rem;
   }
 `;
 
